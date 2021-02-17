@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+#title {
+  margin-top: 1em;
+  color: #fb8500;
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+.container {
+  margin-top: 10em;
+  padding: 1em 1em 1em 1em;
+  border: 3px solid #8ecae6;
+  background-color: #e5e5e5;
+}
+
+#text {
+  font-size: 1.5em;
+}
+
+#author {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.btn {
+  background-color: #219ebc !important;
+  border-color: #023047 !important;
+  color: white !important;
+}
+
+#madeby {
+  padding-top: 2em;
+  color: #8ecae6;
+}

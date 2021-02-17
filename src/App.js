@@ -5,9 +5,7 @@ import quotes from "./quotes"
 // import Container from 'react-bootstrap/Container';
 // import Button from 'react-bootstrap/Button';
 
-import Header from "./Header"
-import Content from "./Content"
-import Footer from "./Footer"
+// import Content from "./Content"
 
 
 
@@ -30,9 +28,28 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-      <Header />
-      <Content quote={this.state.quote} author={this.state.author} handleNewQuote={this.randomQuoteHandler}/>
-      <Footer />
+      <h1 id="title">Random Quote App</h1>
+      <div className="container" id="quote-box">
+        <div className="row">
+          <div className="col">
+            <p id="text">{this.state.quote}</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <p id="author">{this.state.author}</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <button type="button" className="btn btn-light" onClick={this.randomQuoteHandler} id="new-quote">New Quote</button>
+          </div>
+          <div className="col">
+            <a id="tweet-quote" target="_blank" href={`https://twitter.com/intent/tweet/?text=${this.state.quote} - ${this.state.author}`}><button className="btn btn-light">Tweet Quote</button></a>
+          </div>
+        </div>
+      </div>
+      <p id="madeby">Made by Balint Pataki, 2021 Febr</p>
       </div>
     );
   }

@@ -5,9 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #023047 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#title {
+  margin-top: 1em;
+  color: #fb8500;
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+.container {
+  margin-top: 10em;
+  padding: 1em 1em 1em 1em;
+  border: 3px solid #8ecae6;
+  background-color: #e5e5e5;
+}
+
+#text {
+  font-size: 1.5em;
+}
+
+#author {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.btn {
+  background-color: #219ebc !important;
+  border-color: #023047 !important;
+  color: white !important;
+}
+
+#madeby {
+  padding-top: 2em;
+  color: #8ecae6;
 }
